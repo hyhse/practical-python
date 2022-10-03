@@ -213,7 +213,7 @@ height = 'Really tall' # A string
 Python is dynamically typed. The perceived "type" of a variable might change
 as a program executes depending on the current value assigned to it.
 
-### Case Sensitivity
+### Case Sensitivity `区分大小写`
 
 Python is case sensitive. Upper and lower-case letters are considered different letters.
 These are all different variables:
@@ -245,8 +245,8 @@ print('Number of days', day)
 ```
 
 The statements indented below the `while` will execute as long as the expression after the `while` is `true`.
-
-### Indentation
+![](./imgs/2022-10-01-18-31-09.png)
+### Indentation `缩进`
 
 Indentation is used to denote groups of statements that go together.
 Consider the previous example:
@@ -279,7 +279,7 @@ readability. It does not affect the execution.
 * Use a Python-aware editor.
 
 Python's only requirement is that indentation within the same block
-be consistent.   For example, this is an error:
+be consistent`一致的`.   For example, this is an error:
 
 ```python
 while num_bills * bill_thickness < sears_height:
@@ -308,6 +308,14 @@ elif a == b:
     print('Computer says yes')
 else:
     print('Computer says maybe')
+```
+```
+if 条件1:
+    情况1
+elif 条件2:
+    情况2
+else<del> 条件3</del>:
+    情况3
 ```
 
 ### Printing

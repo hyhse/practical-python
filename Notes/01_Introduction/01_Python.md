@@ -34,7 +34,7 @@ In the words of Python's creator:
 ### Where is Python on my Machine?
 
 Although there are many environments in which you might run Python,
-Python is typically installed on your machine as a program that runs
+Python is typically`通常` installed on your machine as a program that runs
 from the terminal or command shell. From the terminal, you should be
 able to type `python` like this:
 
@@ -64,8 +64,8 @@ will be able to use it everywhere else.
 On your machine, start Python and use it as a calulator to solve the
 following problem.
 
-Lucky Larry bought 75 shares of Google stock at a price of $235.14 per
-share. Today, shares of Google are priced at $711.25. Using Python’s
+Lucky Larry bought 75 shares of Google stock at a price of \$235.14 per
+share. Today, shares of Google are priced at \$711.25. Using Python’s
 interactive mode as a calculator, figure out how much profit Larry would
 make if he sold all of his shares.
 
@@ -75,8 +75,8 @@ make if he sold all of his shares.
 >>>
 ```
 
-Pro-tip: Use the underscore (\_) variable to use the result of the last
-calculation. For example, how much profit does Larry make after his evil
+Pro-tip: **Use the underscore (\_) variable to use the result of the last
+calculation**. For example, how much profit does Larry make after his evil
 broker takes their 20% cut?
 
 ```python
@@ -87,14 +87,17 @@ broker takes their 20% cut?
 
 ### Exercise 1.2: Getting help
 
-Use the `help()` command to get help on the `abs()` function. Then use
+```Type help() for interactive help, or help(object) for help about object.```
+![](./imgs/2022-10-01-10-23-37.png)
+![](./imgs/2022-10-01-10-24-08.png)
+Use the `help()` command to get help on the `abs():Return the absolute value of the argument.` function. Then use
 `help()` to get help on the `round()` function. Type `help()` just by
 itself with no value to enter the interactive help viewer.
 
 One caution with `help()` is that it doesn’t work for basic Python
-statements such as `for`, `if`, `while`, and so forth (i.e., if you type
+statements`简单语句` such as `for`, `if`, `while`, and so forth (i.e., if you type
 `help(for)` you’ll get a syntax error). You can try putting the help
-topic in quotes such as `help("for")` instead. If that doesn’t work,
+topic in quotes such as **`help("for")`** instead. If that doesn’t work,
 you’ll have to turn to an internet search.
 
 Followup: Go to <http://docs.python.org> and find the documentation for
@@ -151,7 +154,7 @@ Chicago will have to wait for the next northbound CTA \#22 bus:
 
 ```python
 >>> import urllib.request
->>> u = urllib.request.urlopen('http://ctabustracker.com/bustime/map/getStopPredictions.jsp?stop=14791&route=22')
+>>> u = urllib.request.urlopen('https://ctabustracker.com/bustime/wireless/html/eta.jsp?route=---&direction=---&displaydirection=---&stop=---&findstop=on&selectedRtpiFeeds=&id=14791')
 >>> from xml.etree.ElementTree import parse
 >>> doc = parse(u)
 >>> for pt in doc.findall('.//pt'):
@@ -163,7 +166,7 @@ Chicago will have to wait for the next northbound CTA \#22 bus:
 >>>
 ```
 
-Yes, you just downloaded a web page, parsed an XML document, and
+Yes, you just downloaded a web page, parsed`解析` an XML document, and
 extracted some useful information in about 6 lines of code. The data
 you accessed is actually feeding the website
 <http://ctabustracker.com/bustime/home.jsp>. Try it again and watch
