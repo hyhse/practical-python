@@ -474,7 +474,7 @@ NameError: name 'days' is not defined
 
 Reading error messages is an important part of Python code. If your program
 crashes, the very last line of the traceback message is the actual reason why the
-the program crashed. Above that, you should see a fragment of source code and then
+the program crashed. Above that, you should see a fragment'片段' of source code and then
 an identifying filename and line number.
 
 * Which line is the error?
