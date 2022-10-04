@@ -50,4 +50,4 @@ while M > 0:
         M = M * (1 + R/12) - m_p - e_p
         m_s = m_s + 1
         TP = TP + m_p + e_p
-    print(m_s, TP)
+    print(f'要花费{m_s}个月, 总计付款${TP:0.2f}元.')
